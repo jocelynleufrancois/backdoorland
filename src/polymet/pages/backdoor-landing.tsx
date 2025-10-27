@@ -35,7 +35,7 @@ import { BackdoorFooter } from "@/polymet/components/backdoor-footer";
       referralSource: 'Join Form',
     });
 
-    alert('Success! You\'re on the waitlist.');
+   alert("Success! You're on the waitlist.");
   } catch (error) {
     alert('Something went wrong. Please try again.');
     console.error(error);
