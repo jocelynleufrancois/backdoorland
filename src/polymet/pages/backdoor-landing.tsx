@@ -1,4 +1,4 @@
-import { submitCustomer } from '../src/services/airtable';
+import { submitCustomer } from '@/services/airtable';
 import { formatPhoneNumber, isValidPhone, isValidEmail } from '../src/utils/validation';
 import { useRef } from "react";
 import { BackdoorHeader } from "@/polymet/components/backdoor-header";
