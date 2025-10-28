@@ -126,10 +126,20 @@ export function BackdoorJoinForm({ onSubmit }: BackdoorJoinFormProps) {
                 </div>
               </div>
 
+              {/* SMS Consent */}
+              <div className="bg-zinc-950 border border-zinc-800 rounded-lg p-4 mt-6">
+                <p className="text-zinc-300 text-sm leading-relaxed">
+                  By clicking "Request Invite", I agree to receive SMS text messages from BackDoor about availability notifications, confirmations, and customer-care updates. Message frequency varies. Message and data rates may apply. Reply STOP to opt-out.
+                </p>
+                <p className="text-zinc-500 text-xs mt-3">
+                  View our <a href="#" className="text-yellow-500 hover:text-yellow-400 underline">Terms & Conditions</a> and <a href="#" className="text-yellow-500 hover:text-yellow-400 underline">Privacy Policy</a>
+                </p>
+              </div>
+
               {/* Submit Button */}
               <Button
                 type="submit"
-                className="w-full h-14 bg-yellow-600 hover:bg-yellow-500 text-black font-bold text-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-yellow-600/50 mt-8"
+                className="w-full h-14 bg-yellow-600 hover:bg-yellow-500 text-black font-bold text-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-yellow-600/50 mt-6"
               >
                 Request Invite
               </Button>

@@ -80,8 +80,11 @@ export function BackdoorHero({ onSubmit }: BackdoorHeroProps) {
               Text me when we launch
             </Button>
           </form>
-          <p className="text-zinc-500 text-sm mt-4">
-            Get notified when tonight's drops go live
+          <p className="text-zinc-400 text-sm mt-4 leading-relaxed">
+            By clicking "Text me when we launch", I agree to receive SMS text messages from BackDoor about availability notifications, confirmations, and customer-care updates. Message frequency varies. Message and data rates may apply. Reply STOP to opt-out.
+          </p>
+          <p className="text-zinc-500 text-xs mt-2">
+            View our <a href="#" className="text-yellow-500 hover:text-yellow-400 underline">Terms & Conditions</a> and <a href="#" className="text-yellow-500 hover:text-yellow-400 underline">Privacy Policy</a>
           </p>
         </div>
       </div>

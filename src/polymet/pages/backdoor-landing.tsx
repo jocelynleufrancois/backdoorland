@@ -9,6 +9,9 @@ import { BackdoorSocialProof } from "@/polymet/components/backdoor-social-proof"
 import { BackdoorJoinForm } from "@/polymet/components/backdoor-join-form";
 import { BackdoorFooter } from "@/polymet/components/backdoor-footer";
 
+console.log('AIRTABLE_API_KEY starts with:', process.env.AIRTABLE_API_KEY?.slice(0, 4));
+
+
 export function BackdoorLanding() {
   const joinFormRef = useRef<HTMLDivElement>(null);
 

@@ -64,10 +64,12 @@ export default async function handler(
 
   } catch (error: any) {
     console.error('Error submitting to Airtable:', error);
+    console.error('Error stack:', error.stack);
 
     return res.status(500).json({
       ok: false,
-      error: error.message || 'Failed to submit data'
+      error: error.message || 'Failed to submit data',
+      details: process.env.NODE_ENV === 'development' ? error.stack : undefined
     });
   }
 }
